@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(154, 190, 243);
+}
+
+#buttons {
+    position: fixed;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+}
+
+button {
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    width: 20%;
+}
+
+.robot {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.head {
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.eye {
+    background-color: lightblue;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+#leye {
+    top: 40px;
+    left: 40px;
+}
+#reye {
+    top: 40px;
+    left: 95px;
+}
+
+#smile {
+    position: relative;
+    bottom: -60px;
+    left: 40px;
+    background-color: rgb(79, 197, 236);
+    width: 120px;
+    height: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.teeth {
+    position: relative;
+    top: -2.5px;
+    left: 2px;
+    background-color: white;
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+
+}
+
+.body {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.lhand, .rhand {
+    display: inline-block;
+}
+.lhand {
+    position: relative;
+    right: 14.3%;
+    height: 100px;
+    width: 50px;
+    background-color: white;
+}
+
+.rhand {
+    left: 69%;
+    position: relative;
+    height: 100px;
+    width: 50px;
+    background-color: white;
+}
+
+
+#anleft, #anright {
+    position: relative;
+    background-color: white;
+    width: 50px;
+    height: 50px;         
+    transform: translateX(-10%);
+    animation: dance-hands 1s infinite ease-in-out;
+    animation-play-state: paused;
+   
+}
+
+#anleft {
+    top: 25%;
+    left: -29.7%
+}
+
+#anright {
+    top: 25%;
+    left: 53.7%;
+}
+
+.legs {
+ position: relative;
+ top: 47.7%;
+}
+
+.leg, .ranileg, .lanileg {
+display: inline-block;
+position: relative;
+width: 50px;
+height: 100px;
+background-color: white; 
+}
+
+.rleg {
+    right: -50%;
+}
+
+.lleg {
+    left: 20%;
+}
+
+#anilegs {
+    position: relative;
+    top: 46%;
+    transform: translateX(-10%);
+    animation: dance-foots 1s infinite ease-in-out;
+    animation-play-state: paused;
+    
+    
+}
+.ranileg {
+    position: relative;
+    height: 50px;
+    left: 20%;
+}
+
+.lanileg {
+    position: relative;
+    height: 50px;
+    left: 50%;
+}
+
+#buttons {
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@keyframes dance-hands {
+    0% {
+        transform: translateX(70%);
+    }
+
+    50% {
+        transform: translateX(-70%);
+    }
+
+    100% {
+        transform: translateX(70%);
+    }
+}
+
+@keyframes dance-foots {
+    0% {
+        transform: translateX(-13%);
+    }
+
+    50% {
+        transform: translateX(13%);
+    }
+
+    100% {
+        transform: translateX(-13%);
+    }
+}
